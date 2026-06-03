@@ -8,7 +8,7 @@ class SocketService {
   factory SocketService() => _instance;
   SocketService._internal();
 
-  static const String wsUrl = 'http://localhost:3000';
+  static const String wsUrl = 'https://twine-api.onrender.com';
 
   IO.Socket? _socket;
   final _storage = const FlutterSecureStorage();

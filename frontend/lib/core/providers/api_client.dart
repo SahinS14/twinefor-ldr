@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class ApiClient {
-  static const String baseUrl = String.fromEnvironment('API_URL', defaultValue: 'http://localhost:3000/api/v1');
+  static const String baseUrl = String.fromEnvironment('API_URL', defaultValue: 'https://twine-api.onrender.com/api/v1');
   static final ApiClient _instance = ApiClient._internal();
   factory ApiClient() => _instance;
 
