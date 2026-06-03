@@ -32,7 +32,7 @@ import appConfig from './config/app.config';
         type: 'postgres',
         url: config.get('DATABASE_URL'),
         autoLoadEntities: true,
-        synchronize: config.get('NODE_ENV') !== 'production',
+        synchronize: true,
         ssl: config.get('NODE_ENV') === 'production' ? { rejectUnauthorized: false } : false,
         logging: config.get('NODE_ENV') === 'development',
         extra: { max: 20, idleTimeoutMillis: 30000 },
